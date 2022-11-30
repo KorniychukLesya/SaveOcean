@@ -1,0 +1,43 @@
+.page {
+  scroll-behavior: smooth;
+
+  &--with-menu {
+    overflow: hidden;
+  }
+
+  &__header {
+    padding: 0 24px;
+    margin-bottom: 25px;
+
+    @include onTable {
+      padding: 0 33px;
+    }
+
+    @include onDesktop {
+      padding: 0 39px;
+    }
+
+
+    @include onDesign {
+      padding: 0 71px;
+    }
+
+    @include onDesignPlus {
+      padding: 0 112px;
+    }
+
+    @include onDesign {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+	  top: 0;
+	  right: 0;
+ }
+ 
+  &__footer {
+    padding: 0;
+  }
+}

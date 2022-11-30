@@ -1,0 +1,107 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	max-width: 303px;
+	height: 100vh;
+	padding: 50px 15px 38px 32px;
+  background: $c-white;
+	transform: translateY(-100%);
+	transition: transform 0.3s;
+  z-index: 80;
+  color:  $c-black;
+
+
+  @include onTable {
+    max-width: 463px;
+  }
+
+  @include onDesktop {
+    max-width: 440px;
+  }
+
+  @include onDesign {
+    max-width: 487px;
+  }
+
+  @include onDesignPlus {
+    max-width: 544px;
+  }
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  &__item {
+    list-style-type: none;
+    margin-bottom: 32px;
+
+    @include onTable {
+      margin-bottom: 40px;
+    }
+
+    @include onDesignPlus {
+      margin-bottom: 48px;
+    }
+   }
+
+  &__link {
+	  font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:  $c-black;
+
+    @include onTable {
+      font-size: 32px;
+    }
+
+    @include onDesign{
+      font-size: 36px;
+    }
+
+  }
+
+  &__link:hover {
+    color: $c-blue;
+  }
+
+  &__temaColor {
+    @include onTable {
+      display: none;
+    }
+  }
+
+  &__contact-list {
+    color:  $c-black;
+    margin-bottom: 60px;
+  }
+
+  &__contact-list a {
+    color:  $c-black;
+ }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: 100px;
+    gap: 32px;
+    margin-bottom: 38px;
+  }
+
+  &__social-item {
+    display: block;
+  }
+
+  &__social-cvg {
+    display: block;
+    fill: $c-black;
+  }
+
+  &__social-cvg:hover {
+    display: block;
+    fill: $c-blue;
+  }
+}

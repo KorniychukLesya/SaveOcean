@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/main.scss" />
+  <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="page">
+  <header class="page__header header">
+    <div class="header__logo">Save<span class="header__logo-the">the</span>Ocean</div>
+    <div class="header__menu">
+      <div class="header__temaColor">
+        <div class="header__temaColorButton">
+          <img src="../src/images/ColorTemaButton.svg" alt="button">
+        </div>
+      </div>
+
+      <div class="header__menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="page__menu menu">
+    <ul class="menu__part-one">
+       <li class="menu__item">
+          <a href="#aboutUs" class="menu__link menu__link--aboutUs">
+            About us
+          </a>
+       </li>
+       <li class="menu__item">
+          <a href="#ourProjects" class="menu__link menu__link--ourProjects">
+            Our Projects
+          </a>
+       </li>
+       <li class="menu__item">
+          <a href="#stories" class="menu__link menu__link--stories">
+            stories
+          </a>
+       </li>
+       <li class="menu__item">
+          <a href="#joinTeam" class="menu__link menu__link--joinTeam">
+            join the team
+          </a>
+       </li>
+    </ul>
+
+    <div class="menu__part-two">
+      <div class="menu__temaColor">
+        <div class="menu__temaColorButton">
+          <img src="../src/images/ColorTemaButton.svg" alt="button">
+        </div>
+      </div>
+
+      <div class="menu__item">
+        <a href="#contactUs"  class="menu__link menu__link--contactUs">
+          contact us
+        </a>
+     </div>
+
+     <div class="menu__contact-list contact-list">
+       <div  class="contact-list__item">
+          <a
+            href="tel:++38 093 123-23-23"
+            class="contact-list__link"
+          >
+            +38( 093 ) 123-23-23
+         </a>
+         <span class="contact-list__depiction">
+            Mo-Fri 9:00-18:00
+         </span>
+       </div>
+
+       <div  class="contact-list__item">
+         <a
+            href="email:savetheocean@.org"
+            class="contact-list__link"
+         >
+           savetheocean@.org
+         </a>
+         <span class="contact-list__depiction">
+            for projects and questions
+         </span>
+       </div>
+
+       <div  class="contact-list__item">
+         <a
+           href="email:hrsavetheocean@.org"
+           class="contact-list__link"
+         >
+           hrsavetheocean@.org
+         </a>
+         <span class="contact-list__depiction">
+           for jobs
+         </span>
+       </div>
+     </div>
+
+     <div class="menu__social">
+       <div class="menu__social-item">
+         <a href="./" class="menu__social-link">
+          <svg class="menu__social-cvg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"/>
+          </svg>
+         </a>
+       </div>
+       <div class="menu__social-item">
+          <a href="./" class="menu__social-link">
+            <svg class="menu__social-cvg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.9968 7.9983C9.79333 7.9983 7.99515 9.79651 7.99515 12C7.99515 14.2035 9.79333 16.0017 11.9968 16.0017C14.2002 16.0017 15.9984 14.2035 15.9984 12C15.9984 9.79651 14.2002 7.9983 11.9968 7.9983ZM23.9987 12C23.9987 10.3429 24.0137 8.70077 23.9206 7.04665C23.8275 5.12536 23.3893 3.4202 21.9843 2.01525C20.5764 0.607302 18.8743 0.172008 16.953 0.0789456C15.2959 -0.0141173 13.6539 0.000892936 11.9998 0.000892936C10.3427 0.000892936 8.70061 -0.0141173 7.04652 0.0789456C5.12526 0.172008 3.42014 0.610305 2.01522 2.01525C0.607291 3.42321 0.172005 5.12536 0.0789442 7.04665C-0.014117 8.70377 0.000892919 10.3459 0.000892919 12C0.000892919 13.6541 -0.014117 15.2992 0.0789442 16.9533C0.172005 18.8746 0.610293 20.5798 2.01522 21.9847C3.42314 23.3927 5.12526 23.828 7.04652 23.9211C8.70361 24.0141 10.3457 23.9991 11.9998 23.9991C13.6569 23.9991 15.2989 24.0141 16.953 23.9211C18.8743 23.828 20.5794 23.3897 21.9843 21.9847C23.3923 20.5768 23.8275 18.8746 23.9206 16.9533C24.0167 15.2992 23.9987 13.6571 23.9987 12ZM11.9968 18.1572C8.58954 18.1572 5.83973 15.4073 5.83973 12C5.83973 8.5927 8.58954 5.84284 11.9968 5.84284C15.404 5.84284 18.1538 8.5927 18.1538 12C18.1538 15.4073 15.404 18.1572 11.9968 18.1572ZM18.406 7.02864C17.6105 7.02864 16.968 6.38621 16.968 5.59067C16.968 4.79513 17.6105 4.1527 18.406 4.1527C19.2015 4.1527 19.8439 4.79513 19.8439 5.59067C19.8442 5.77957 19.8071 5.96667 19.735 6.14124C19.6628 6.31581 19.5569 6.47442 19.4233 6.608C19.2897 6.74157 19.1311 6.84748 18.9565 6.91967C18.782 6.99185 18.5949 7.02888 18.406 7.02864Z" />
+            </svg>
+          </a>
+       </div>
+       <div class="menu__social-item">
+          <a href="./" class="menu__social-link">
+            <svg
+              class="menu__social-cvg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5285 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859Z"
+              />
+            </svg>
+           </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page__main main">
+    <section class="main__hero hero">
+      <div class="hero__aboutTheProgect">
+        <h2 class="hero__title">
+          <img class="hero__title-item" src="./images/AboutTheProgect.svg" alt="About The Progect">
+        </h2>
+        <article class="hero__article">
+          <h3 id="aboutUs" class="hero__article-title">
+            A nice place for powerful slogan
+          </h3>
+          <p class="hero__article-item">
+            The purpose of lorem ipsum is to create
+            a natural looking block of text that doesn't
+            distract from the layout. A practice not
+            without controversy, laying out pages with
+            meaningless filler text can be very useful
+            when the focus is meant to be on design, not content.
+          </p>
+        </article>
+
+        <article class="hero__article">
+          <h3
+            id="ourProjects"
+            class="hero__article-title hero__article-title--noActive"
+          >
+            our projects
+          </h3>
+        </article>
+
+        <article class="hero__article">
+          <h3
+            id="stories"
+            class="hero__article-title hero__article-title--noActive">
+            our stories
+          </h3>
+        </article>
+      </div>
+
+      <article class="hero__slider">
+        <div class="slider__photo">
+          <img class="slider__photo-item" src="./images/slider/slider_one.jpg" alt="slider 1">
+          <div class="slider__button">
+            <div class="slider__button-item">
+              <img src="./images/Slider_prev.svg" alt="button">
+            </div>
+            <div class="slider__number">
+              <div class="slider__number-curent">1</div>
+              /3
+            </div>
+
+            <div class="slider__button-item">
+              <img src="./images/Slider_next.svg" alt="button">
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="main__latestNews latestNews" >
+      <h2 class="latestNews__title">Latest News</h2>
+      <div id="latestNews"  class="latestNews__container" >
+        <article class="latestNews__item" >
+          <img
+            class="latestNews__photo"
+            src="./images/slider/unsplash_8yS04veb1TQ.jpg"
+            alt="WHAT IS GYM?">
+          <h3 class="latestNews__item-title">
+            WHAT IS GYM?
+          </h3>
+          <p class="latestNews__article">
+            The Global Youth Mentor Program gives motivated
+            Youth Leaders the tools and support to create
+            lasting systemic change in their communities.
+          </p>
+        </article>
+
+        <article class="latestNews__item">
+          <img
+            class="latestNews__photo"
+            src="./images/slider/unsplash_bWAArZ5M4Ag.jpg"
+            alt="WHAT IS GYM?"
+          >
+          <h3 class="latestNews__item-title">
+            Here is the result of our last project in africa
+          </h3>
+          <p class="latestNews__article">
+            The purpose of lorem ipsum is to create
+            a natural looking block of text
+            (sentence, paragraph, page, etc.)
+          </p>
+        </article>
+
+        <article class="latestNews__item">
+          <img
+            class="latestNews__photo"
+            src="./images/slider/unsplash_XIBIC21QeZQ.jpg"
+            alt="WHAT IS GYM?">
+
+          <h3 class="latestNews__item-title">
+            Time to change something. There is no time left
+          </h3>
+          <p class="latestNews__article">
+            The purpose of lorem ipsum is to create a
+            natural looking block of text
+            (sentence, paragraph, page, etc.) that doesn't.
+          </p>
+        </article>
+
+        <article class="latestNews__item">
+          <img class="latestNews__photo" src="./images/slider/unsplash_-NXNaE9lu6w.jpg" alt="WHAT IS GYM?">
+          <h3 class="latestNews__item-title">
+            How can we change the situation with
+            the global warming cleaning the ocean?
+          </h3>
+          <p class="latestNews__article">
+            The purpose of lorem ipsum is to
+            create a natural looking block of text sentence.
+          </p>
+        </article>
+      </div>
+      <div class="latestNews__slidecontainer">
+        <input
+          type="range"
+          id="range"
+          min="1"
+          value="1"
+          step="1"
+          class="latestNews__slider"
+        >
+      </div>
+    </section>
+
+    <section class="main__subscription subscription">
+      <h2
+        id="joinTeam"
+        class="subscription__title"
+      >
+        Subscribe to receive reports and breaking news from save
+        the ocean team
+      </h2>
+      <form
+        class="subscription__form"
+        action="."
+        method="get"
+      >
+        <input
+          type="email"
+          class="subscription__form-input"
+          name="email"
+          placeholder="E-mail"
+          id="subscription"
+          required
+        >
+        <button
+          type="submit"
+          class="subscription__button"
+        >
+          Send
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer class="page__footer footer">
+    <div class="footer__logo">Save<span class="footer__logo-the">the</span>Ocean</div>
+    <div class="footer__container">
+      <div class="footer__subscribe-social">
+        <h2 class="footer__title">
+          Subscribe to OUR SOCIAL MEDIA
+        </h2>
+        <div class="footer__social-liste">
+          <div class="footer__social-item">
+            <a href="./" class="footer__social-link footer__social-link--FB">Facebook</a>
+          </div>
+
+          <div class="footer__social-item">
+            <a href="./" class="footer__social-link footer__social-link--Instagram">Instagram</a>
+          </div>
+
+          <div class="footer__social-item">
+            <a href="./" class="footer__social-link footer__social-link--Telegram">Telegram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__contact">
+        <h2
+          id="contactUs"
+          class="footer__title"
+        >
+            do not hesitate to contact us
+        </h2>
+        <div class="footer__contact-list contact-list">
+          <div  class="contact-list__item">
+            <a
+              href="tel:++38 093 123-23-23"
+              class="contact-list__link"
+            >
+              +38( 093 ) 123-23-23
+            </a>
+            <span class="contact-list__depiction">
+              Mo-Fri 9:00-18:00
+            </span>
+          </div>
+
+          <div  class="contact-list__item">
+            <a
+              href="email:savetheocean@.org"
+              class="contact-list__link"
+            >
+              savetheocean@.org
+            </a>
+            <span class="contact-list__depiction">
+              for projects and questions
+            </span>
+          </div>
+
+          <div  class="contact-list__item">
+            <a
+              href="email:hrsavetheocean@.org"
+              class="contact-list__link"
+            >
+              hrsavetheocean@.org
+            </a>
+            <span class="contact-list__depiction">
+              for jobs
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

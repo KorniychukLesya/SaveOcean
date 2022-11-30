@@ -1,0 +1,103 @@
+.subscription {
+  padding: 60px 0;
+  border-top: 1px solid $c-black;
+  border-bottom: 1px solid $c-black;
+
+  @include onTable {
+    padding: 55px 0;
+  }
+
+  @include onDesktop {
+    padding: 94px 0;
+  }
+
+  @include onDesign {
+    padding: 88px 0;
+  }
+
+  @include onDesignPlus {
+    padding: 88px 0;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+     text-align: center;
+    text-transform: uppercase;
+
+    @include onDesktop {
+      font-size: 32px;
+    }
+
+    @include onDesign {
+      font-size: 36px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @include onTable {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__form-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    font-family: 'KyivType Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    @include onTable {
+      width: 75%;
+    }
+
+    @include onDesktop {
+      width: 830px;
+    }
+
+    &::placeholder {
+      font-family: 'KyivType Sans';
+      font-style: normal;
+      font-size: 16px;
+      line-height: 22px;
+
+      @include onDesign {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__button {
+      box-sizing: border-box;
+      width: 100%;
+      height: 48px;
+      font-weight: 700;
+      font-size: 16px;
+      color: $c-white;
+      background-color: $c-black;
+      border: 1px solid $c-black;
+      cursor: pointer;
+
+
+    @include onTable {
+      width: 25%;
+    }
+
+    @include onDesign {
+      font-size: 18px;
+    }
+  }
+
+  &__button:hover {
+    background-color: $c-blue;
+  }
+}

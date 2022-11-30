@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $c-black;
+  color: $c-black;
+
+  @include onTable {
+    padding-top: 39px;
+    padding-bottom: 24px;
+  }
+
+  &__logo.blur {
+    filter: blur(7.5px);
+    -webkit-filter: blur(7.5px);
+  }
+
+  &__logo {
+    font-weight: 400;
+    font-size: 20px;
+
+    @include onTable {
+      font-size: 36px;
+    }
+  }
+
+  &__logo-the {
+    font-weight: 700;
+    color: $c-blue;
+  }
+
+  &__menu {
+    display: flex;
+    position: relative;
+
+    @include onDesktop {
+      &::before {
+        display: block;
+        margin-right: 38px;
+        content: "+38 ( 093 ) 123-23-23";
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "Mo-Fri 9:00-18:00";
+        bottom: 0;
+        font-weight: 400;
+        font-size: 13px;
+        color: #BEBEBE;
+      }
+    }
+  }
+
+  &__temaColor {
+    display: none;
+    width: 48px;
+    height: 32px;
+    padding-top: 7px;
+
+    @include onTable {
+       display: flex;
+       margin-right: 30px;
+    }
+    @include onDesktop {
+      margin-right: 38px;
+    }
+  }
+
+  &__temaColor img {
+    display: flex;
+    margin: 0;
+  }
+
+  &__menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: $c-black;
+    z-index: 100;
+  }
+
+  &__menu-btn.active {
+    background-color: $c-white;
+  }
+
+  &__menu-btn.active {
+    background-color: $c-white;
+  }
+
+  &__menu-btn span {
+     width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color: $c-white;
+    transition: all 0.5s;
+  }
+
+  &__menu-btn.active span {
+    background-color: $c-black;
+  }
+
+  &__menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+
+  &__menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+
+  &__menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+  &__menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform:  rotate(45deg);
+  }
+  &__menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+}

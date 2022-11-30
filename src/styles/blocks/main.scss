@@ -1,0 +1,49 @@
+.main {
+  padding: 0 24px;
+
+  @include onTable {
+    padding: 0 33px;
+  }
+
+  @include onDesktop {
+    padding: 0 39px;
+  }
+
+  @include onDesign {
+    padding: 0 71px;
+  }
+
+  @include onDesignPlus {
+    padding: 0 112px;
+  }
+
+  &.blur {
+    filter: blur(7.5px);
+    -webkit-filter: blur(7.5px);
+  }
+
+  &__hero {
+    margin-bottom: 49px;
+
+    @include onTable {
+      margin-bottom: 70px;
+    }
+
+    @include onDesign {
+      margin-bottom: 88px;
+    }
+  }
+
+  &__latestNews {
+    margin-bottom: 72px;
+    padding-bottom: 72px;
+
+    @include onTable {
+      margin-bottom: 59px;
+    }
+
+    @include onDesign {
+      margin-bottom: 80px;
+    }
+  }
+ }

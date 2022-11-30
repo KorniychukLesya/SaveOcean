@@ -1,0 +1,19 @@
+{
+  "name": "my-project",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "lint": "mate-scripts lint"
+  },
+  "devDependencies": {
+    "@mate-academy/eslint-config": "0.0.20",
+    "@parcel/transformer-sass": "2.8.0",
+    "eslint": "^8.28.0",
+    "parcel": "^2.8.0",
+    "stylelint": "^13.5.0",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-scss": "^3.17.2"
+  }
+}

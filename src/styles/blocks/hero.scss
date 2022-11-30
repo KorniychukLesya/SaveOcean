@@ -1,0 +1,118 @@
+.hero {
+
+  @include onDesktop {
+    display: flex;
+  }
+
+  &__aboutTheProgect {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    @include onDesktop {
+      width: 25%;
+      margin-right: 16px;
+    }
+
+    @include onDesign {
+      margin-right: 24px;
+    }
+
+    @include onDesignPlus {
+      margin-right: 32px;
+    }
+
+  }
+
+  &__title {
+    display: block;
+    width: 330px;
+    height: 100px;
+    padding-bottom: 16px;
+
+    @include onTable {
+      width: 704px;
+      height: 212px;
+    }
+
+    @include onDesktop {
+      width: 232px;
+      height: 70px;
+    }
+
+    @include onDesign {
+      width: 288px;
+      height: 87px;
+    }
+
+    @include onDesignPlus {
+      width: 402px;
+      height: 122px;
+      padding-bottom: 24px;
+    }
+
+  }
+
+  &__title-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__article-title {
+    position: relative;
+    padding: 19px 0;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-top: 1px solid $c-black;
+    border-bottom: 1px solid $c-black;
+    cursor: pointer;
+
+    @include onDesignPlus {
+      padding: 27px 0;
+    }
+  }
+
+  &__article-title:hover {
+    color: $c-blue;
+  }
+
+  &__article-title--noActive::after {
+    position: absolute;
+    display: block;
+    content: ">";
+    width: 6px;
+    height: 12px;
+    right: 10px;
+    bottom: 40%;
+  }
+
+  &__article-item {
+    height: 100%;
+    padding: 16px 0;
+    font-size: 14px;
+    line-height: 22px;
+
+    @include onDesktop {
+      padding: 10px 0;
+    }
+
+    @include onDesign {
+      padding-top: 16px;
+      padding-bottom: 26px;
+    }
+
+    @include onDesignPlus {
+      padding-top: 24px;
+      padding-bottom: 178px;
+    }
+  }
+
+  &__slider {
+    @include onDesktop {
+      width: 75%;
+    }
+  }
+ }

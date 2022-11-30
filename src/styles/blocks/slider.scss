@@ -1,0 +1,77 @@
+.slider {
+
+  &__photo {
+    position: relative;
+    display: flex;
+  }
+
+  &__photo-item {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    object-fit: cover;
+
+    @include onTable {
+      height: 420px;
+    }
+
+    @include onDesktop {
+      height: 490px;
+    }
+
+    @include onDesign {
+      height: 522px;
+    }
+
+    @include onDesignPlus {
+      height: 723px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+   bottom: 15px;
+   left: 17px;
+  }
+
+  &__button-item {
+    display: flex;
+    width: 24px;
+    height: 100%;
+    margin-right: 16px;
+
+    @include onTable {
+      width: 32px;
+    }
+
+    @include onDesign {
+      width: 47px;
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+     padding: 0 16px;
+    font-weight: 400;
+    font-size: 18px;
+    color: $c-white;
+
+    @include onTable {
+      font-size: 24px;
+    }
+
+    @include onDesign {
+      font-size: 36px;
+      padding: 0 24px;
+    }
+  }
+
+  &__number-curent {
+    font-weight: 700;
+  }
+}

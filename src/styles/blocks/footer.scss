@@ -1,0 +1,166 @@
+.footer {
+  padding-top: 40px;
+  padding-right: 23px;
+  padding-bottom: 60px;
+  padding-left: 32px;
+  background-color: $c-black;;
+  color: $c-white;
+
+  @include onDesignPlus {
+    flex-direction: row;
+  }
+
+  @include onTable {
+    padding-top: 61px;
+    padding-bottom: 94px;
+  }
+
+  @include onDesktop {
+    padding-bottom: 80px;
+    padding-left: 40px;
+  }
+
+  @include onDesign {
+    padding-bottom: 80px;
+    padding-left: 70px;
+  }
+
+  @include onDesignPlus {
+    padding-top: 56px;
+    padding-bottom: 70px;
+    padding-left: 112px;
+  }
+
+  &.blur {
+    filter: blur(7.5px);
+    -webkit-filter: blur(7.5px);
+  }
+
+  &__logo {
+    margin-bottom: 47px;
+    font-weight: 400;
+    font-size: 24px;
+
+    @include onTable {
+      font-size: 36px;
+    }
+  }
+
+  &__logo-the {
+    font-weight: 700;
+    color: $c-blue;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include onDesignPlus {
+      lex-direction: row;
+      gap: 28px;
+    }
+  }
+
+  &__social-liste {
+    display: flex;
+    flex-direction: column;
+
+    @include onTable {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+
+  &__subscribe-social {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 47px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    @include onTable {
+      font-size: 24px;
+    }
+
+    @include onDesktop {
+      font-size: 36px;
+    }
+  }
+  &__social-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px 0;
+    background-color: $c-white;
+  }
+
+  &__social-link {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101010;
+    text-decoration: none;
+  }
+
+  &__social-link--FB::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/FB.svg);
+    left: -34px;
+    top: 0;
+  }
+
+  &__social-link--Instagram::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/Instagram.svg);
+    left: -34px;
+    top: 0;
+  }
+
+  &__social-link--Telegram::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/Telegram.svg);
+    left: -34px;
+    top: 0;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-direction: column;
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 42px;
+    }
+  }
+
+  &__contact-depiction {
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 25px;
+    color: #BEBEBE
+  }
+}
