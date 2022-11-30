@@ -23,7 +23,7 @@ Here is [Figma desing](https://www.figma.com/file/PQZPy117Zlowfrs0AnvhVs/Test?no
 - Footer
 - Popup menu
 
-# All elements are adapted to 5 breakpoints:
+#All elements are adapted to 5 breakpoints:
 - 1920 px,
 - 1366 px,
 - 1024 px,
@@ -31,7 +31,7 @@ Here is [Figma desing](https://www.figma.com/file/PQZPy117Zlowfrs0AnvhVs/Test?no
 - 375 px.
 
 
-## Setup
+# Setup
 Make sure to install the dependencies:
 
 # yarn
@@ -41,14 +41,13 @@ yarn install
 npm install
 
 
-## Development Server
+# Development Server
 
 Start the development server on http://localhost:1234
 
 npm start
 
-
-## Production
+# Production
 
 Build the application for production:
 
