@@ -23,7 +23,7 @@ Here is [Figma desing](https://www.figma.com/file/PQZPy117Zlowfrs0AnvhVs/Test?no
 - Footer
 - Popup menu
 
-##All elements are adapted to 5 breakpoints:
+## All elements are adapted to 5 breakpoints:
 - 1920 px,
 - 1366 px,
 - 1024 px,
