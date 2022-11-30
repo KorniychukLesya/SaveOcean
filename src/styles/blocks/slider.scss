@@ -30,6 +30,7 @@
     width: 24px;
     height: 100%;
     margin-right: 16px;
+    cursor: pointer;
 
     @include onTable {
       width: 32px;

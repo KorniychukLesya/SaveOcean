@@ -40,6 +40,7 @@
     margin-bottom: 47px;
     font-weight: 400;
     font-size: 24px;
+    cursor: pointer;
 
     @include onTable {
       font-size: 36px;
@@ -98,6 +99,10 @@
     margin-bottom: 16px;
     padding: 12px 0;
     background-color: $c-white;
+  }
+
+  &__social-item:hover {
+    background-color: $c-blue;
   }
 
   &__social-link {
