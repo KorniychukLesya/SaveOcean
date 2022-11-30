@@ -5,17 +5,17 @@ Here is [DEMO LINK](https://creative-treacle-b012ef.netlify.app/#ourProjects)
 Here is [Figma desing](https://www.figma.com/file/PQZPy117Zlowfrs0AnvhVs/Test?node-id=1%3A92&t=dfmKsoL3x20sh7X8-0/)
 
 
-# Technologies:
+## Technologies:
  - HTML
  - SCSS
  - JavaScript
  - Parcel
 
-# The layout uses two fonts:
+## The layout uses two fonts:
  - Syncopate
  -  KyivType Sans
 
-# The layout consists of 6 elements:
+## The layout consists of 6 elements:
 - Header
 - Hero
 - Latest news
@@ -23,7 +23,7 @@ Here is [Figma desing](https://www.figma.com/file/PQZPy117Zlowfrs0AnvhVs/Test?no
 - Footer
 - Popup menu
 
-#All elements are adapted to 5 breakpoints:
+##All elements are adapted to 5 breakpoints:
 - 1920 px,
 - 1366 px,
 - 1024 px,
@@ -31,23 +31,23 @@ Here is [Figma desing](https://www.figma.com/file/PQZPy117Zlowfrs0AnvhVs/Test?no
 - 375 px.
 
 
-# Setup
+## Setup
 Make sure to install the dependencies:
 
-# yarn
+## yarn
 yarn install
 
-# npm
+## npm
 npm install
 
 
-# Development Server
+## Development Server
 
 Start the development server on http://localhost:1234
 
 npm start
 
-# Production
+## Production
 
 Build the application for production:
 
