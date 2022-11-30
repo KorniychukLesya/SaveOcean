@@ -1,41 +1,28 @@
 .slider {
+  overflow: hidden;
 
   &__photo {
     position: relative;
     display: flex;
+    transition: all ease 1s;
   }
 
   &__photo-item {
+    position: relative;
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    height: 200px;
     background-position: center;
     object-fit: cover;
-
-    @include onTable {
-      height: 420px;
-    }
-
-    @include onDesktop {
-      height: 490px;
-    }
-
-    @include onDesign {
-      height: 522px;
-    }
-
-    @include onDesignPlus {
-      height: 723px;
-    }
   }
 
   &__button {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
-   bottom: 15px;
-   left: 17px;
+    bottom: 73px;;
+    left: 28px;
+    z-index: 99;
   }
 
   &__button-item {

@@ -19,4 +19,8 @@
     font-size: 13px;
     color: #BEBEBE
   }
+
+  &__depiction:last-child() {
+    margin-bottom: 0;
+  }
 }
