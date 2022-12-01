@@ -41,32 +41,41 @@
     display: flex;
     position: relative;
 
-    @include onDesktop {
-      &::before {
-        display: block;
-        margin-right: 38px;
-        content: "+38 ( 093 ) 123-23-23";
-        font-weight: 400;
-        font-size: 16px;
-        cursor: pointer;
-      }
+  }
 
-      &::after {
-        position: absolute;
-        display: block;
-        content: "Mo-Fri 9:00-18:00";
-        bottom: 0;
-        font-weight: 400;
-        font-size: 13px;
-        color: #BEBEBE;
-      }
+  &__phone {
+    display: none;
+    margin-right: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: $c-black;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "Mon-Fri 9:00-18:00";
+      bottom: 0;
+      font-weight: 400;
+      font-size: 13px;
+      color: #BEBEBE;
     }
+
+    @include onDesktop {
+      display: flex;
+    }
+
+  }
+
+  &__phone--dark {
+    color: $c-white;
   }
 
   &__temaColor {
-    display: none;
+    opacity: 0;
 
     @include onTable {
+      opacity: 1;
        display: flex;
        margin-right: 30px;
     }
@@ -88,6 +97,10 @@
     cursor: pointer;
   }
 
+  &__menu-btn--dark {
+    background-color: $c-white;
+  }
+
   &__menu-btn.active {
     background-color: $c-white;
   }
@@ -98,11 +111,15 @@
   }
 
   &__menu-btn span {
-     width: 20px;
+    width: 20px;
     height: 2px;
     position: absolute;
     background-color: $c-white;
     transition: all 0.5s;
+  }
+
+  &__menu-btn--dark span {
+    background-color:  $c-black;
   }
 
   &__menu-btn.active span {
@@ -130,3 +147,4 @@
     transform: rotate(-45deg);
   }
 }
+

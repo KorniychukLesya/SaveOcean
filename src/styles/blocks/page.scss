@@ -7,7 +7,6 @@
 
   &__header {
     padding: 0 24px;
-    margin-bottom: 25px;
 
     @include onTable {
       padding: 0 33px;
@@ -26,9 +25,7 @@
       padding: 0 112px;
     }
 
-    @include onDesign {
-      margin-bottom: 32px;
-    }
+
   }
 
   &__menu {

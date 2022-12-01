@@ -52,6 +52,10 @@
     }
   }
 
+  &__item--dark {
+    border: 1px solid $c-white;
+  }
+
   &__item:hover {
     box-shadow: -8px 7px $c-blue;
   }

@@ -1,8 +1,12 @@
 .slider {
-  overflow: hidden;
+
+  &__item {
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 
   &__photo {
-    position: relative;
     display: flex;
     transition: all ease 1s;
   }
@@ -11,7 +15,6 @@
     position: relative;
     display: flex;
     box-sizing: border-box;
-    width: 100%;
     background-position: center;
     object-fit: cover;
   }
@@ -39,6 +42,10 @@
     @include onDesign {
       width: 47px;
     }
+  }
+
+  &__button-item:hover {
+    transform: translateY(-3px);
   }
 
   &__number {

@@ -35,7 +35,7 @@
 
   &__item {
     list-style-type: none;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
    }
 
   &__link {
@@ -63,6 +63,15 @@
     flex-direction: column;
     justify-content: flex-end;
    }
+
+   &__temaColor {
+    opacity: 1;
+
+    @include onTable {
+      opacity: 0;
+    }
+
+  }
 
   &__contact-list {
     color:  $c-black;

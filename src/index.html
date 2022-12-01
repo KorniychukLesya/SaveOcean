@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Save the Ocean</title>
+  <link
+    rel="icon" type="image/x-icon"
+    href="../src/images/favicon.jpg">
   <link rel="stylesheet" href="./styles/main.scss" />
   <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +19,22 @@
   <header class="page__header header">
     <div class="header__logo">Save<span class="header__logo-the">the</span>Ocean</div>
     <div class="header__menu">
+      <a
+            href="tel:++38 093 123-23-23"
+            class="header__phone"
+          >
+            +38( 093 ) 123-23-23
+         </a>
+      <div class="header__temaColor temaColor">
+        <input
+          type="range"
+          min="1"
+          value="1"
+          step="1"
+          class="temaColor__button"
+        >
+      </div>
 
-        <div class="header__temaColor">
-          <div class="header__temaColorButton">
-            <img src="../src/images/Tema_color.png" alt="button">
-          </div>
-        </div>
 
       <div class="header__menu-btn">
         <span></span>
@@ -59,7 +72,6 @@
       <div class="menu__temaColor temaColor">
         <input
           type="range"
-          id="range"
           min="1"
           value="1"
           step="1"
@@ -152,8 +164,10 @@
     <section class="main__hero hero">
       <div class="hero__aboutTheProgect">
         <h2 class="hero__title">
+          ABOUT THE
           <img class="hero__title-item" src="./images/AboutTheProgect.svg" alt="About The Progect">
         </h2>
+
         <article class="hero__article">
           <h3 id="aboutUs" class="hero__article-title">
             A nice place for powerful slogan
@@ -187,11 +201,14 @@
       </div>
 
       <article class="hero__slider slider">
-        <div class="slider__photo">
-          <img class="slider__photo-item" src="./images/slider_top/unsplash_4CaVbHUXf5o (1).jpg" alt="slider 1">
-          <img class="slider__photo-item" src="./images/slider_top/unsplash_i5FsBOLsB50.jpg"  alt="slider 2">
-          <img class="slider__photo-item" src="./images/slider_top/unsplash_Ubwb-m2eKAo.jpg"  alt="slider 3">
+        <div class="slider__item">
+          <div class="slider__photo">
+            <img class="slider__photo-item" src="./images/slider_top/unsplash_4CaVbHUXf5o (1).jpg" alt="slider 1">
+            <img class="slider__photo-item" src="./images/slider_top/unsplash_i5FsBOLsB50.jpg"  alt="slider 2">
+            <img class="slider__photo-item" src="./images/slider_top/unsplash_Ubwb-m2eKAo.jpg"  alt="slider 3">
+          </div>
         </div>
+
 
         <div class="slider__button">
           <div class="slider__button-item slider__prev">
@@ -321,17 +338,17 @@
         <h2 class="footer__title">
           Subscribe to OUR SOCIAL MEDIA
         </h2>
-        <div class="footer__social-liste">
+        <div class="footer__social-liste" id="social">
           <div class="footer__social-item">
-            <a href="./" class="footer__social-link footer__social-link--FB">Facebook</a>
+            <a href="#social" class="footer__social-link footer__social-link--FB">Facebook</a>
           </div>
 
           <div class="footer__social-item">
-            <a href="./" class="footer__social-link footer__social-link--Instagram">Instagram</a>
+            <a href="#social" class="footer__social-link footer__social-link--Instagram">Instagram</a>
           </div>
 
           <div class="footer__social-item">
-            <a href="./" class="footer__social-link footer__social-link--Telegram">Telegram</a>
+            <a href="#social" class="footer__social-link footer__social-link--Telegram">Telegram</a>
           </div>
         </div>
       </div>

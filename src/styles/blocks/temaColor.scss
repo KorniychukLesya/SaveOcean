@@ -1,6 +1,7 @@
 .temaColor {
 
   &__button {
+    display: flex;
     -webkit-appearance: none;
     width: 48px;
     height: 32px;
@@ -9,10 +10,6 @@
     border-radius: 29px;
     -webkit-transition: .2s;
     transition: opacity .2s;
-
-    @include onTable {
-      display: none;
-    }
   }
 
   &__button::-webkit-slider-thumb {
@@ -20,7 +17,7 @@
     appearance: none;
     width: 36px;
     height: 34px;
-   margin-left: -2px;
+    margin-left: -2px;
     border: 0;
     background: #000;
     background: url('../images/ColorTemaButtonWhite.svg');
@@ -41,9 +38,7 @@
 
   &__button--dark::-moz-range-thumb {
     background: url('../images/ColorTemaButtonDark.svg');
- }
-
-
+  }
 }
 
 
