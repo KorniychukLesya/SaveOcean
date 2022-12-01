@@ -7,7 +7,7 @@
 	height: 100vh;
 	padding: 50px 15px 38px 32px;
   background: $c-white;
-	transform: translateY(-100%);
+	transform: translateX(100vh);
 	transition: transform 0.3s;
   z-index: 80;
   color:  $c-black;
@@ -30,20 +30,12 @@
   }
 
   &.active {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   &__item {
     list-style-type: none;
     margin-bottom: 32px;
-
-    @include onTable {
-      margin-bottom: 40px;
-    }
-
-    @include onDesignPlus {
-      margin-bottom: 48px;
-    }
    }
 
   &__link {
@@ -66,12 +58,6 @@
     text-shadow: -5px 4px $c-blue;
   }
 
-  &__temaColor {
-    @include onTable {
-      display: none;
-    }
-  }
-
   &__part-two {
     display: flex;
     flex-direction: column;
@@ -80,7 +66,6 @@
 
   &__contact-list {
     color:  $c-black;
-    margin-bottom: 60px;
   }
 
   &__contact-list a {

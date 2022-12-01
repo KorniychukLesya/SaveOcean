@@ -1,6 +1,11 @@
 .main {
   padding: 0 24px;
 
+ &--dark {
+  background-color: $c-black;
+  color: $c-white;
+ }
+
   @include onTable {
     padding: 0 33px;
   }
@@ -36,7 +41,7 @@
 
   &__latestNews {
     margin-bottom: 72px;
-    
+
     @include onTable {
       margin-bottom: 59px;
     }

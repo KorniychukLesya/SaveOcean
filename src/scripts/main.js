@@ -31,11 +31,31 @@ menuLinkJoinTeam.addEventListener("click", classToggle);
 menuLinkContactUs.addEventListener("click", classToggle);
 menuLinkSocial.addEventListener("click", classToggle);
 menuBtn.addEventListener("click", classToggle);
+
+
 let slider = document.getElementById("range");
 let elem = document.getElementById("latestNews");
 
 slider.oninput = function() {
-  elem.style.left = - this.value * 9  + "px";
+  console.logthis.value * 9  + "px";
+}
+
+
+let buttonDark = document.querySelector(".temaColor__button");
+let headerDark = document.querySelector(".header");
+let mainDark = document.querySelector(".main");
+
+buttonDark.oninput = function() {
+  if(this.value > 50) {
+    buttonDark.classList.add("temaColor__button--dark");
+    headerDark.classList.add("header--dark");
+    mainDark.classList.add("main--dark");
+
+  } else {
+    buttonDark.classList.remove("temaColor__button--dark");
+    headerDark.classList.remove("header--dark");
+    mainDark.classList.remove("main--dark");
+  }
 }
 
 const images = document.querySelectorAll(".slider__photo img")
@@ -63,8 +83,6 @@ init();
 document.querySelector(".slider__prev").addEventListener("click", function(){
   count--;
 
-  console.log(widthSlider);
-
   if (count < 0) {
     count = images.length - 1;
   }
@@ -87,6 +105,7 @@ function rollSlider() {
   numberFoto.innerHTML = count + 1;
 }
 
+
 const myTextbox = document.getElementById("subscription__form");
 myTextbox.addEventListener("keypress", checkName, false);
 
@@ -104,4 +123,4 @@ function checkName(evt) {
   }
 }
 
-document.getElementById("subscription__form").reset();
+// document.getElementById("subscription__form").reset();

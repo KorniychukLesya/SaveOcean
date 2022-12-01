@@ -12,6 +12,11 @@
     padding-bottom: 24px;
   }
 
+  &--dark {
+    background-color: $c-black;
+    color: $c-white;
+  }
+
   &__logo.blur {
     filter: blur(7.5px);
     -webkit-filter: blur(7.5px);
@@ -60,9 +65,6 @@
 
   &__temaColor {
     display: none;
-    width: 48px;
-    height: 32px;
-    padding-top: 7px;
 
     @include onTable {
        display: flex;
@@ -73,11 +75,6 @@
     }
   }
 
-  &__temaColor img {
-    display: flex;
-    margin: 0;
-    cursor: pointer;
-  }
 
   &__menu-btn {
     display: flex;
@@ -97,6 +94,7 @@
 
   &__menu-btn.active {
     background-color: $c-white;
+    transform: translate(20px, -20px);
   }
 
   &__menu-btn span {
@@ -109,6 +107,7 @@
 
   &__menu-btn.active span {
     background-color: $c-black;
+
   }
 
   &__menu-btn span:nth-of-type(2) {

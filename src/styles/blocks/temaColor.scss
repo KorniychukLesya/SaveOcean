@@ -1,0 +1,49 @@
+.temaColor {
+
+  &__button {
+    -webkit-appearance: none;
+    width: 48px;
+    height: 32px;
+    background: #575757;
+    outline: none;
+    border-radius: 29px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+    @include onTable {
+      display: none;
+    }
+  }
+
+  &__button::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 36px;
+    height: 34px;
+   margin-left: -2px;
+    border: 0;
+    background: #000;
+    background: url('../images/ColorTemaButtonWhite.svg');
+    cursor: pointer;
+  }
+
+  &__button::-moz-range-thumb {
+    width: 36px;
+    height: 32px;
+    border: 0;
+    background: url('../images/ColorTemaButtonWhite.svg');
+    cursor: pointer;
+  }
+
+  &__button--dark::-webkit-slider-thumb {
+     background: url('../images/ColorTemaButtonDark.svg');
+  }
+
+  &__button--dark::-moz-range-thumb {
+    background: url('../images/ColorTemaButtonDark.svg');
+ }
+
+
+}
+
+
