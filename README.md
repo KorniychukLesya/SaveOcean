@@ -1,6 +1,6 @@
 ## Save The Ocean
 
-Here is [DEMO LINK](https://creative-treacle-b012ef.netlify.app/#ourProjects)
+Here is [DEMO LINK](https://creative-treacle-b012ef.netlify.app/)
 
 Here is [Figma desing](https://www.figma.com/file/PQZPy117Zlowfrs0AnvhVs/Test?node-id=1%3A92&t=dfmKsoL3x20sh7X8-0/)
 
